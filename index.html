@@ -349,6 +349,7 @@ footer::before{content:'JS';position:absolute;right:-40px;bottom:-80px;font-fami
 .cs-inline svg{flex-shrink:0}
 @media(max-width:1100px){.cs-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.hero-contacts{flex-direction:column;align-items:flex-start;gap:15px}}
+@media(max-width:720px){.hero-band{display:grid;grid-template-columns:1fr 1fr;column-gap:22px;border-top-width:1.5px}.hb-item{padding:15px 0;border-right:none;border-bottom:1px solid var(--rule2);min-width:0}.hb-item:nth-last-child(-n+2){border-bottom:none}}
 @media(max-width:720px){.cs-grid{grid-template-columns:1fr}}
 
 /* ── MOBILE NAV (hamburger) ── */
@@ -366,7 +367,7 @@ footer::before{content:'JS';position:absolute;right:-40px;bottom:-80px;font-fami
   .nav-links li>a{display:block;padding:15px 2px;font-size:1rem;color:var(--ink);border-bottom:1px solid var(--rule);cursor:pointer}
   .nav-links li>a::after{display:none!important}
   .theme-toggle{margin:12px 0;cursor:pointer}
-  .nav-cta-wrap{display:none}
+  .nav-cta-wrap{width:100%;margin-top:12px}
   .nav-cta{width:100%;text-align:center;padding:15px 22px!important;font-size:.8rem!important;cursor:pointer!important}
   .hire-pop{position:static;min-width:0;width:100%;margin-top:10px;box-shadow:none;border-radius:10px;display:none}
   .hire-pop.open{display:flex;transform:none;opacity:1;visibility:visible}
