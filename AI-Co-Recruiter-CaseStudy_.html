@@ -270,6 +270,13 @@ section{position:relative}
 .beat p b{color:var(--text);font-weight:600}
 .beat.key{background:linear-gradient(120deg,rgba(126,90,174,.13),rgba(217,138,192,.06));border:1px solid rgba(199,127,182,.3);border-radius:16px;padding:22px 26px}
 @media(max-width:720px){.beat.key{padding:20px}}
+.lead-band{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(22px,3vw,40px);margin:2px 0 28px}
+@media(max-width:820px){.lead-band{grid-template-columns:1fr;gap:24px}}
+.lead-k{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-soft);margin-bottom:11px}
+.lead-item p{margin:0;font-size:14.5px;line-height:1.66;color:#cfc8da}
+.lead-item p b{color:var(--text);font-weight:600}
+.team-credit{max-width:940px;margin:0 0 40px;padding:13px 0 32px 18px;border-left:2px solid var(--accent);border-bottom:1px solid rgba(255,255,255,.09);font-size:14px;line-height:1.62;color:var(--muted)}
+.team-credit b{color:var(--text);font-weight:600}
 
 /* single walkthrough (end) */
 .walk-stage{margin-top:34px;display:flex;gap:clamp(30px,5vw,64px);align-items:center;flex-wrap:wrap}
@@ -409,6 +416,7 @@ footer{margin-top:60px;padding:26px 0 50px;border-top:1px solid var(--line-2);di
   <a href="#system"><span class="bead"></span><span class="lbl">The system</span></a>
   <a href="#agents"><span class="bead"></span><span class="lbl">The agents</span></a>
   <a href="#impact"><span class="bead"></span><span class="lbl">Impact</span></a>
+  <a href="#ownership"><span class="bead"></span><span class="lbl">Leadership</span></a>
   <a href="#walkthrough"><span class="bead"></span><span class="lbl">Walkthrough</span></a>
 </nav>
 
@@ -427,7 +435,7 @@ footer{margin-top:60px;padding:26px 0 50px;border-top:1px solid var(--line-2);di
       <div class="vital"><span class="num" data-count="25" data-suffix="%">0</span><span class="lab">Lower drop-off</span></div>
     </div>
     <div class="hero-meta reveal" data-d="4">
-      <div class="cell"><div class="k">Role</div><div class="v">Design lead — owned the interaction model, the agent decision‑surface system &amp; the mobile‑first bet, ideation to launch</div></div>
+      <div class="cell"><div class="k">Role</div><div class="v">Design lead — led a team of 2 designers; owned the interaction model, decision surface &amp; mobile‑first bet, ideation to launch</div></div>
       <div class="cell"><div class="k">Scope</div><div class="v">5 agents · mobile, web &amp; WhatsApp</div></div>
       <div class="cell"><div class="k">Arc</div><div class="v">Discovery → research → global rollout</div></div>
       <div class="cell"><div class="k">Status</div><div class="v">Live across enterprise HR, worldwide</div></div>
@@ -644,10 +652,16 @@ footer{margin-top:60px;padding:26px 0 50px;border-top:1px solid var(--line-2);di
     <div class="sec-head reveal">
       <div class="sec-num">09</div>
       <div>
-        <div class="eyebrow" style="margin-bottom:16px">Ownership &amp; reflection</div>
-        <h2 class="sec-title">In my words — what I owned,<br>and why it held.</h2>
+        <div class="eyebrow" style="margin-bottom:16px">Leadership &amp; ownership</div>
+        <h2 class="sec-title">How I led it — and what<br>I owned.</h2>
       </div>
     </div>
+    <div class="lead-band reveal">
+      <div class="lead-item"><div class="lead-k">Led the team</div><p>A team of <b>two designers, with me as lead</b>. I set the interaction model and the decision‑surface pattern as our shared standard, ran the critiques and held the quality bar across all five agents — so a five‑agent system stayed one language, not five.</p></div>
+      <div class="lead-item"><div class="lead-k">Moved the stakeholders</div><p>I partnered daily with the <b>recruit product director and product managers</b> to shape the roadmap. Splitting one bot into five agents, and going mobile‑first, were design‑led calls I argued through product and engineering — not requirements handed to me.</p></div>
+      <div class="lead-item"><div class="lead-k">Drove the org</div><p>Beyond the screens, I moved the team’s definition of done from <b>&ldquo;it works&rdquo; to &ldquo;a recruiter will defend it&rdquo;</b> — making trust the shared success metric across design, product, engineering and content.</p></div>
+    </div>
+    <p class="team-credit reveal">Built with the recruit product director, product managers, engineering &amp; content leads — their domain depth and the build made it real. My job was to <b>lead the design and hold the line on the idea</b>.</p>
     <div class="story">
       <div class="beat reveal"><div class="bk">The problem</div><p>Recruiting didn't need a smarter algorithm. It needed one a hiring team would be willing to stand behind. Screening, scheduling, shortlisting — everyone knew they were slow. But the reason they stayed manual wasn't capability. It was trust. These are decisions that carry legal weight, human weight, and somebody's name on them. Hand that to a black box and no recruiter signs off, however good the model is. So the brief I set wasn't "automate hiring." It was <b>"build an agent a recruiter would defend in a room."</b></p></div>
       <div class="beat reveal"><div class="bk">The bet</div><p>One do‑everything bot would have been easy to demo and impossible to trust. I split the work into five agents, each owning a single stage of the hire — requisition, screening, shortlisting, scheduling, feedback — and each handing off in the open, to the next agent and to a human. Narrow scope per agent meant every action stayed legible. You could always see which agent did what, and why.</p></div>
